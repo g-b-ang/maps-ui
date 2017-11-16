@@ -1,0 +1,52 @@
+
+p {
+    font-size: 25px;
+    color: white;
+}
+
+
+
+#map{
+    height: 500px;
+    width: 28%;
+    margin-left: 70px;
+}
+
+p.mix {border-style: hidden hidden solid hidden;}
+
+.barheader .fa{
+    color: white;
+}
+
+.footer .fa{
+    margin: 10px 30px;
+    color: white;
+}
+
+.ribbon{
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+/* Custom styles */
+
+.ribbon.sticky{
+  position: auto;
+}
+
+.ribbon.shadow{
+      box-shadow: 1px #000;  
+}
+
+/* Ribbon Colors */
+
+.ribbon.blue1{background: rgb(39, 43, 167);}
+.ribbon.blue2{background: rgb(12, 59, 143
+)}
+.ribbon.white{background: white;}
+.ribbon.black{background: black;}
+
+
+.col-md-4.ribbon.blue2{
+	width: 360px;
+}

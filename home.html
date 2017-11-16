@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<!-- There won't be much on this page -->
+
+  <head>
+    <title> Home </title>
+      
+      
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/home.css" />
+      
+  </head>
+
+ 
+  
+  
+  
+  <body>
+      <div class="container barheader">
+          <div class="row">
+              
+              <div class = "col-md-4" align="right">
+                  <div class = "ribbon blue1 shadow">
+                    <i class="fa fa-wifi" aria-hidden="true"></i>
+                    <i class="fa fa-signal" aria-hidden="true"></i>
+                    <i class="fa fa-battery-full" aria-hidden="true">12:30</i>
+                  </div> 
+              </div>
+          </div>
+      </div>
+      <div class="container">
+              <div class = "col-md-4 ribbon blue2">
+			
+                    <p class="mix"> <span class ="glyphicon glyphicon-menu-hamburger"></span> Search</p>
+			  </div>
+              
+          </div>
+
+      <div id="map"></div>
+    <script>
+      function initMap() {
+        var ucsdpc = {lat: 32.879638, lng: -117.236177};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: ucsdpc
+        });
+        var marker = new google.maps.Marker({
+          position: ucsdpc,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAvxByw7s-koDIc2_8a7NrvYKVVI0BE7U&callback=initMap">
+    </script>
+      
+    <div class="container footer" align="center">
+          <div class="row">
+              
+              <div class = "col-md-4">
+                  <div class = "ribbon black shadow">
+                    <i class="fa fa-play fa-rotate-180 fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+    
+      
+  </body>
+
+</html>
